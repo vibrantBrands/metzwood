@@ -1,0 +1,53 @@
+
+
+// Fonts
+$base-font: 'Montserrat', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+$font-stack-system: $base-font;
+
+// Colors 
+
+$black: #000;
+$white: #fff;
+$orange: #ffa42f;
+$dark-blue: #0c1348;
+$lite-green: #8ad434;
+$lite-blue: #e2f6ff;
+$blue-box: #26a5ec;
+$gray: #c7c7c7;
+$dark-gray: darken($gray, 5%);
+$purple: #A464A7;
+$orange: #F37D20;
+$icon-blue: #0f94e8;
+$green: #8ad434;
+$faq-bg: #F2F2F2;
+$text-color: #5d5d5d;
+$footer-bg: #f2f2f2;
+$footer-border: #253f8c;
+
+$drop-shadow: 5px 8px 15px -5px #ced4d9;
+
+
+// Menu 
+
+$menu-transition: all .5s ease-out;
+
+// Breakpoints
+
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;
+
+// Sizes 
+
+$content-max-width: 1300px;
+
+$topbar-height: 50px;
+$topbar-mobile-height: 90px;
+
+
+// Margins
+
+$header-top-margin: 70px;
+$h2-top-margin: 25px;

@@ -1,0 +1,41 @@
+footer {
+    background: $footer-bg;
+    border-top: 8px solid $footer-border;
+    clear: both;
+    padding: 20px 0 50px;
+    text-align: center;
+
+    .container {
+        margin: 0 auto;
+
+        >div {
+            margin-top: 30px;
+        }
+    }
+
+    .btn {
+        -webkit-box-shadow: 5px 8px 15px -5px #727272;
+        box-shadow: 5px 8px 15px -5px #727272;
+    }
+
+    .ccm-block-social-links {
+        display: flex;
+        font-size: 2em;
+
+        .list-inline {
+
+            li {
+                margin: 0 10px;
+
+                .fa {
+                	font-size: 1.5em;
+                }
+
+                a {
+                    color: $dark-blue;
+                }
+            }
+
+        }
+    }
+}

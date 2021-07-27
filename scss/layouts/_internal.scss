@@ -1,0 +1,651 @@
+.internal_wrapper {
+	margin-top: 100px;
+	width: 100%;
+
+	header {
+
+		.navigation {
+			background: $white;
+			margin-bottom: 0;
+			
+
+			@media screen and (max-width: $xl-breakpoint) {
+				padding-top: 60px;
+			}
+
+			@media screen and (max-width: $lg-breakpoint) {
+				padding-top: 10px;
+				position: fixed;
+				top: 48px;
+			}
+		}
+	}
+
+	.hero {
+
+		@media screen and (max-width: $lg-breakpoint) {
+			padding-bottom: 50px;
+		}
+
+		h1 {
+			padding-top: 90px;
+
+			@media screen and (max-width: $lg-breakpoint) {
+				padding-top: 20px;
+			}
+		}
+
+		.container {
+			padding: 0;
+		}
+
+		.two-column {
+			align-items: center;
+			flex-direction: row;
+			width: 100%;
+
+			@include flex-col-layout($md-breakpoint, column-reverse);
+
+			>div {
+				width: 50%;
+
+				@media screen and (max-width: $xl-breakpoint) {
+					padding-top: 40px;
+				}
+
+				@include mobile-full-width();
+
+				.btn {
+					margin-bottom: 50px;
+
+					@media screen and (max-width: $md-breakpoint) {
+						margin-bottom: 0;
+					}
+				}
+
+				&:nth-child(2) {
+					text-align: center;
+
+					p {
+						text-align: right;
+
+						@media screen and (max-width: $lg-breakpoint) {
+							text-align: center;
+						}
+					}
+				}
+			}
+
+			img {
+				position: relative;
+				left: auto;
+				margin-top: 50px;
+				transform: none;
+
+				@media screen and (max-width: $lg-breakpoint) {
+					margin-top: 100px;
+				}
+			}
+
+			.fa-clock {
+				color: $icon-blue;
+			}
+		}
+
+		>.two-column {
+
+			>div {
+				padding: 0 35px;
+			}
+			p {
+				margin-top: 10px;
+			}
+		}
+
+		.mobile {
+
+			>div {
+				padding-top: 30px;
+				text-align: center;
+			}
+		}
+	}
+
+	.page-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 40px 5% 5%;
+
+		h1 {
+			margin-top: 100px;
+		}
+
+		p {
+			text-align: left;
+		}
+
+		ul {
+
+			li {
+				color: #5d5d5d;
+				list-style-type: disc;
+			}
+		}
+
+		img {
+			margin: 0 30px;
+
+			&.team-photo {
+				margin-top: -318px;
+			}
+
+			@media screen and (max-width: $md-breakpoint) {
+	            display: block;
+	            float: none !important;
+	            margin: 0 auto 50px;
+	        }
+		}
+	}
+
+
+	.homeowner-testimonial {
+		background: url(../img/testimonial_bg.png) no-repeat;
+		background-size: cover;
+		border-radius: 0 0 10px 10px;
+		width: 100%;
+		min-height: 300px;
+		position: relative;
+
+		@media screen and (max-width: $lg-breakpoint) {
+	        min-height: 450px;
+	    }
+
+		&.auto {
+			background: url(../img/testimonial_auto.png) no-repeat;
+
+			.callout {
+				background: linear-gradient(352deg, #e36c1d 0%, #fb8512 100%);
+			}
+		}
+
+		.callout {
+			background: linear-gradient(273deg, rgba(14,148,232,1) 0%, rgba(67,184,240,1) 100%);
+			border-radius: 10px;
+			padding: 20px 40px;
+			position: absolute;
+			right: -25px;
+			text-align: center;
+			top: 60px;
+			width: 500px;
+
+			@media screen and (max-width: $lg-breakpoint) {
+	            top: 300px;
+	            width: 100%;
+	            right: 0;
+	        }
+
+			p {
+				color: $white;
+				font-size: 20px;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.faqs {
+		background: $faq-bg;
+
+		h2 {
+			padding-top: 40px;
+		}
+	}
+
+	.get-a-quote {
+		background: $lite-blue;
+		clear: both;
+		margin-top: 50px;
+
+		h2 {
+			padding-top: 25px;
+		}
+
+		p {
+			margin: 0;
+		}
+
+	    iframe {
+	    	width: 90%;
+
+	        @media screen and (max-width: $xl-breakpoint) {
+	        	min-height: 1100px;
+	        }
+	    }
+
+	    .vivid-simple-accordion {
+	    	margin-bottom: 60px;
+	    }
+
+	    h2 {
+	    	margin-top: 0;
+	    }
+	}
+
+	.report-claim  {
+
+		.container {
+
+			.insurance-companies {
+				display: flex;
+				flex-wrap: wrap;
+				list-style: none;
+				justify-content: center;
+				width: 100%;
+
+				li {
+					list-style: none;
+				}
+
+				@media screen and (max-width: $lg-breakpoint) {
+	     		   justify-content: center;
+	    		}
+
+				a {
+					align-items: center;
+					border: 1px solid $gray;
+					//box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					justify-content: space-between;
+					margin: 0 10px;
+					padding: 10px;
+					text-decoration: none;
+					width: 200px;
+
+					&:hover {
+						
+						p {
+							color: $dark-blue;
+						}
+					}
+
+					img {
+						max-width: 150px;
+					}
+
+					p {
+						font-size: 16px;
+						line-height: 1.2em;
+						margin-bottom: 8px;
+						text-align: center;
+					}
+
+				}
+			}
+		}
+	}
+
+	ol {
+		list-style-type: digital;
+	}
+
+	.our-team {
+
+		h2 {
+			margin: 10px 0 30px;
+			text-align: center;
+		}
+
+		.grid {
+
+			div {
+				margin-bottom: 30px;
+
+				h4 {
+					margin: 20px 0 0;
+					font-size: 18px;
+					font-weight: 800;
+				}
+
+				p {
+					margin-bottom: 3px;
+					text-align: center;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	.testimonials {
+
+		>div {
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			border-radius: 25px;
+			align-items: flex-end;
+			border: 1px solid $gray;
+			padding: 20px 40px;
+			margin-bottom: 45px;
+			text-align: left;
+			width: 30% !important;
+
+			@media screen and (max-width: $lg-breakpoint) {
+	     		width: 100% !important;
+	    	}
+
+			p:nth-child(2) {
+				font-weight: bold;
+				color: $dark-blue;
+			}
+		}
+	}
+
+	.keep-in-mind {
+
+		ul {
+			padding-right: 40px;
+		}
+
+		li {
+			display: inline-block;
+			margin-bottom: 30px;
+			width: 100%;
+
+			 >div {
+                align-items: center;
+                background: $green;
+                display: flex;
+                float: left; 
+                height: 37px;
+                justify-content: center;
+                margin: 0 20px 40px 0;
+                width: 37px;
+
+                @media screen and (max-width: $md-breakpoint) {
+                	float: none; 
+                	text-align: center;
+                	width: 100%;
+                }
+
+                .fas {
+                    align-self: center;
+                    color: $white;
+                    font-size: 20px;
+
+                     @media screen and (max-width: $md-breakpoint) {
+	                	margin: 0 auto;
+	                }
+                }
+            } 
+		}
+	}
+
+	.vivid-simple-accordion {
+		width: 90%;
+		text-align: left;
+
+		.simple-accordion-title-shell {
+			background: $white;
+			border: 1px solid $icon-blue;
+			display: flex;
+			align-items: center;
+			min-height: 65px;
+			position: relative;
+		}
+
+        .panel-title {
+            font-size: 17px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            text-align: left; 
+            width: 90%;
+
+            &:before {
+            	display: none;
+            } 
+            &:after {
+            	background: $lite-blue;
+            	border-radius: 50px;
+            	color: $white;
+            	content: '+';
+            	font-size: 34px;
+            	padding: 3px 13px;
+            	position: absolute;
+            	right: 7px;
+            	top: 7px;
+            }
+        }
+
+
+		.open {
+			.panel-title {
+				&:after {
+					content:"-";
+					padding: 3px 16px;
+				}
+			}
+		}
+
+        .simple-accordion-description {
+        	border: 1px solid $icon-blue;
+        	border-top: none;
+        }
+    }
+
+    .rounded-pictures {
+
+    	.container {
+    		justify-content: space-between;
+    		padding: 0;
+
+    		a {
+    			display: flex;
+    			justify-content: center;
+    		}
+
+    		>div {
+    			position: relative;
+    			margin: 30px 0;
+    		}
+
+    		img {
+    			border-radius: 20px;
+    			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    			margin: 0;
+    			width: 100%;
+    		}
+
+    		.btn {
+    			position: absolute;
+    			top: 75%;
+    		}
+    	}
+    }
+
+    .insurance-types {
+
+    	>div {
+    		align-items: flex-start;
+    	}
+
+    	ul {
+    		list-style-type: none;
+    		padding: 0;
+
+    		li {
+    			list-style-type: none;
+
+    			@media screen and (max-width: $lg-breakpoint) {
+    				align-items: center;
+                	display: flex;
+                	flex-direction: row;
+                }
+
+    			img {
+    				margin: 0 10px;
+    			}
+    		}
+    	}
+    }
+
+    .work-benefits {
+    	margin-top: 40px;
+    	
+    	padding: 0;
+
+    	>div {
+    		align-items: flex-start;
+    		justify-content: flex-start;
+
+    		.fas {
+    			align-items: center;
+    			align-self: center;
+    			background: $icon-blue;
+    			color: $white;
+    			display: inline-flex;
+    			font-size: 1.1em;
+    			height: 35px;
+    			justify-content: center;
+    			margin: 0 10px 25px 0;
+    			min-height: 40px;
+    			min-width: 40px;
+    			width: 35px;
+    		}
+    	}
+
+    	ul {
+    		li {
+    			align-items: center;
+    			display: flex;
+    			list-style-type: none;
+    			min-height: 75px;
+    		}
+    	}
+    }
+
+    .after-hours-cta {
+    	width: 100%;
+    	justify-content: center;
+    	margin-top: -150px;
+
+    	@include flex-col-layout($lg-breakpoint, row);
+    	@include flex-col-layout($md-breakpoint, column);
+
+    	@media screen and (max-width: $md-breakpoint) {
+            margin-top: -230px;
+        }
+
+    	>a {
+    		color: $white;
+    		font-size: 30px;
+    		font-weight: bold;
+    		height: 200px;
+    		justify-content: center;
+    	    margin: 10px 5px;
+    	    text-transform: uppercase;
+    	    max-width: 300px;
+    	    width: 23% !important;
+
+    	    @media screen and (min-width: $lg-breakpoint) {
+            	max-width: 200px;
+        	}
+
+    	    .far {
+
+				span {
+					font-family: $base-font;
+					font-weight: bold;
+					margin-left: 5px;
+				}
+			}
+
+    	    @media screen and (max-width: $lg-breakpoint) {
+    			font-size: 22px;
+            }
+
+            @media screen and (max-width: $md-breakpoint) {
+                  width: 100% !important;
+                  padding: 0 25px;
+            }
+
+    	    &:first-child {
+    	    	background: rgb(15,147,232);
+				background: linear-gradient(0deg, rgba(15,147,232,1) 0%, rgba(67,184,240,1) 100%);
+    	    }
+    	    &:nth-child(2) {
+    	    	background: rgb(226,103,29);
+				background: linear-gradient(0deg, rgba(226,103,29,1) 0%, rgba(252,134,18,1) 100%);
+    	    }
+    	    &:nth-child(3) {
+    	    	background: rgb(93,173,70);
+				background: linear-gradient(0deg, rgba(93,173,70,1) 0%, rgba(135,195,64,1) 100%);
+    	    }
+    	    &:nth-child(4) {
+    	    	background: rgb(35,64,140);
+				background: linear-gradient(0deg, rgba(35,64,140,1) 0%, rgba(65,108,221,1) 100%);
+    	    }
+    	}
+    }
+
+    .after-hours-text {
+    	color: $dark-blue;
+    	margin: 50px auto;
+    	width: 70%;
+    }
+
+    .bluebox {
+    	background: $lite-blue;
+    	margin-top: 50px;
+    	padding: 30px 160px;
+
+    	@media screen and (max-width: $lg-breakpoint) {
+    		padding: 30px;
+        }
+
+    	p {
+    		color: $dark-blue;
+    		margin: 0;
+    	   text-align: center;
+    	}
+    }
+
+    .company-tiles {
+
+    	>div {
+    		border: 1px solid #999;
+    		justify-content: space-between;
+    		margin-top: 30px;
+    		width: 30%;
+
+    		>div {
+    			padding: 30px;
+
+    			@media screen and (max-width: $lg-breakpoint) {
+    				padding: 0;
+        		}
+    		}
+
+    		img {
+    			width: 70%;
+
+    			@media screen and (max-width: $lg-breakpoint) {
+    				width: 100%;
+        		}
+    		}
+
+    		.phone {
+    			align-items: center;
+    			border-top: 1px solid #999;
+    			display: flex;
+    			font-size: 22px;
+    			font-weight: bold;
+    			justify-content: center;
+    			min-height: 60px;
+    			padding: 0;
+    			text-align: center;
+    			width: 100%;
+    		}
+    	}
+    }
+}

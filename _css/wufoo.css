@@ -1,0 +1,210 @@
+
+html.embed {
+	background: 0;
+	width: 95% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  #title112, #title213  {
+		font-size: 15px !important;
+	}
+}
+
+
+.wufoo .info {
+	display: none !important;
+}
+
+.wufoo input.text, .wufoo textarea.textarea {
+	border-radius: 28px !important;
+	border: 0;
+	color: #0c1348;
+	font-family: "Montserrat", sans-serif !important;
+	font-size: 25px !important;
+	font-weight: normal !important;
+	padding: 15px !important;
+	text-align: center !important;
+}
+
+.wufoo input.text {
+	box-shadow: 5px 8px 15px -5px #ced4d9;
+}
+
+
+#Field218 {
+	border-radius: 28px;
+	border: 0;
+	box-shadow: 5px 8px 15px -5px #ced4d9;
+	color: #0c1348;
+	font-family: "Montserrat", sans-serif !important;
+	font-weight: normal !important;
+	padding: 15px !important;
+	text-align: center !important;
+}
+
+#Field218 select.select {
+	font-size: 25px !important;
+}
+
+
+.wufoo input.text::placeholder, .wufoo textarea.textarea::placeholder, .wufoo input.file::placeholder {
+	color: #0c1348;
+	font-family: "Montserrat", sans-serif !important;
+	font-size: 18px !important;
+	font-weight: normal !important;
+	opacity: .5;
+}
+
+.wufoo label.desc, .wufoo legend.desc, .likert caption {
+	color: #0c1348 !important;
+	font-family: "Montserrat", sans-serif !important;
+	font-size: 18px !important;
+	font-weight: normal !important;
+}
+
+.wufoo li div, .wufoo li span, .wufoo li div label, .wufoo li span label {
+	color: #0c1348;
+	font-family: "Montserrat", sans-serif !important;
+	font-size: 16px !important;
+	font-weight: normal !important;
+	margin-top: 10px;
+}
+
+#form1040 {
+	max-width: 500px;
+}
+
+#form1040 #Field8,
+#form1053 #Field8,
+#form1053 #Field321
+ {
+	display: none !important;
+}
+
+#form1040 #title8,
+#form1053 #title8,
+#form1053 #title321 {
+	background: rgb(88,171,39);
+	background: linear-gradient(90deg, rgba(88,171,39,1) 0%, rgba(137,212,52,1) 100%);
+	border-radius: 25px;
+	box-shadow: 5px 8px 15px -5px #ced4d9;
+	color: white !important;
+	cursor: pointer;
+	margin: 20px 0;
+	padding: 15px 20px;
+	text-align: center;
+	width: 94%;
+}
+
+#form1040 fieldset {
+	border-radius: 25px; 
+	box-shadow: 5px 8px 15px -5px #ced4d9;
+}
+
+#form1040 #Field213 {
+	height: 130px;
+	padding: 0 !important;
+}
+
+#fo1004li1 span {
+	width: 48%;
+}
+
+#fo1004li1 span input{
+	width: 91% !important;
+}
+
+#fo1004li1 #Field2,
+#fo1004li1 #Field2 + label {
+	margin-left: 30px;
+}
+
+#fo1004li1 span input{
+	width: 100%;
+}
+
+input.medium {
+	width: 96% !important;
+}
+
+#saveForm {
+	background: #0e93e8;
+    background: linear-gradient(93deg, #0e93e8 0%, #44b9f0 100%);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    font-weight: normal;
+    margin-right: 1%;
+    min-width: 150px;
+    padding: 15px 25px !important;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    transition: all .3s ease-out;
+}
+
+
+
+#fo1040li112, #fo1040li213 {
+	background: white !important;
+	border-radius: 20px;
+    padding: 0px !important;
+}
+
+#fo1040li112 div {
+	padding: 0 20px !important;
+}
+
+#fo1040li215 {
+	display: none;
+}
+
+
+#fo1040li213 {
+	margin-top: 20px !important;
+}
+
+#title112, #title213  {
+	padding-top: 10px !important;
+	margin-left: 20px !important;
+}
+
+html.embed #public #container{
+	column-count: 2 !important;
+}
+
+.wufoo li.focused {
+	background: none !important;
+}
+.wufoo li:focus-visible {
+	border-radius: 28px;
+}
+
+.wufoo .section h3, .wufoo .captcha, #payment .paging-context {
+	border-top: none !important;
+}
+
+#fo1040li213 >div {
+	box-shadow: 5px 8px 15px -5px #ced4d9;
+}
+
+@media screen and (max-width: 992px) {
+  
+	html.embed #public #container{
+		column-count: 1 !important;
+	}
+
+	#title112 {
+	  width: 50%;
+	}
+
+	li.threeColumns div span {
+		width: 50%;
+	}
+}
+
+
